@@ -1,0 +1,232 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: linear-gradient(rgba(255, 255, 255, 0.8) rbga(255, 255, 255, 0.8));
+    background-image: url('bg1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Search Bar styling */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74,144,226,0.3);
+    transform: scale(1.01);
+}
+
+.search-box button {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.search-box button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Result Card and Table styling */
+.result-card {
+    background: #fafbfc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.result-card h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.student-info {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.summary {
+    background: #eef2f3;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Status Colors */
+.error {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.pass {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.fail {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Navigation Bar की स्टाइलिंग */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db; 
+}
+
+.admin-btn a {
+    background-color: #3498db;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.admin-btn a:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.main-heading {
+    font-size: 2rem;          
+    color: #ffffff;             
+    text-align: center;         
+    font-weight: bold;          
+    margin-bottom: 25px;       
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif; 
+}.main{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+}
+.content h1{
+    font-size: 45px;
+    line-height: 1.2;
+}
+.content h2{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.content span{
+    color: orange;
+}
+.content p{
+    margin: 20px;
+    max-width: 700px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
